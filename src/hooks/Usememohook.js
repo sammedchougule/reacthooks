@@ -28,7 +28,7 @@ function Usememohook() {
             <div className='w-full max-w-4xl p-6 mt-10 mb-10 bg-white rounded-lg shadow-lg'>
                 <h1 className='mb-4 text-2xl font-bold'>useMemo Hook</h1>
 
-                <h1 class='text-2xl font-semibold mb-4'>Counter: {count}</h1>
+                <h1 class='text-2xl font-semibold mb-4'>Count: {count}</h1>
                 <h1 class='text-xl font-semibold mb-4'>Selected Item: {selectedItem?.id}</h1>
                 <button class='bg-green-500 border rounded-md p-1 px-4' onClick={() => setCount(count + 1)}>Increment</button>
 
