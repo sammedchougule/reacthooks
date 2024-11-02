@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Usestatehook from './Hooks/Usestatehook';
-import Useeffecthook from './Hooks/Useeffecthook';
-import Usememohook from './Hooks/Usememohook';
+import UseStateHook from './Hooks/UseStateHook';
+import UseEffectHook from './Hooks/UseEffectHook';
+import UseMemoHook from './Hooks/UseMemoHook';
 
 function App() {
 
@@ -11,9 +11,9 @@ function App() {
     <Router>
       <div className="App"> 
         <Routes>
-          <Route path="/"  element={<Usestatehook/>} />
-          <Route path="/useeffect" element={<Useeffecthook/>} />
-          <Route path="/usememo" element={<Usememohook/>} />
+          <Route path="/"  element={<UseStateHook/>} />
+          <Route path="/useeffect" element={<UseEffectHook/>} />
+          <Route path="/usememo" element={<UseMemoHook/>} />
         </Routes>
       </div>
     </Router>
