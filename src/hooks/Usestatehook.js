@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Usestatehook() {
     const [count, setCount] = useState(0);
@@ -21,7 +22,7 @@ function Usestatehook() {
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <div className='mt-10 bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl'>
+            <div className='mt-10 mb-10 bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl'>
                 <h1 className='text-2xl font-bold mb-4'>UseState Hook</h1>
                 <h1 className='text-2xl font-semibold mb-4'>Count: {count}</h1>
 
@@ -40,6 +41,7 @@ function Usestatehook() {
                     >
                         {isOpen ? 'Hide Explanation' : 'Show Explanation'}
                     </button>
+
                     <div className={`accordion-content ${isOpen ? 'open' : 'closed'}`}>
                         {isOpen && (
                             <div className="mt-2 p-4 bg-gray-200 rounded">
@@ -79,7 +81,16 @@ function Usestatehook() {
                             </div>
                         )}
                     </div>
+                    
                 </div>
+
+                {/* Navigation button to UseEffectHook */}
+                <div className="mt-4">
+                    <Link to="/useeffect">
+                        <button className='bg-purple-500 text-white rounded p-2'>Go to UseEffect Hook Example</button>
+                    </Link>
+                </div>
+
             </div>
         </div>
     );
