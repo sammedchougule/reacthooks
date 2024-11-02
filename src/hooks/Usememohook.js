@@ -87,7 +87,7 @@ function Usememohook() {
                 <div className="mt-4 space-x-4">
 
                     <Link to="/useeffect">
-                        <button className='p-2 text-white bg-gray-400 rounded'>Back to UseState Hook</button>
+                        <button className='p-2 text-white bg-gray-400 rounded'>Back to UseEffect Hook</button>
                     </Link>
 
                     <Link to="/useeffect">
