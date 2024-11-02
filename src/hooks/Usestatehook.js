@@ -22,21 +22,21 @@ function Usestatehook() {
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <div className='mt-10 mb-10 bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl'>
-                <h1 className='text-2xl font-bold mb-4'>UseState Hook</h1>
-                <h1 className='text-2xl font-semibold mb-4'>Count: {count}</h1>
+            <div className='w-full max-w-4xl p-6 mt-10 mb-10 bg-white rounded-lg shadow-lg'>
+                <h1 className='mb-4 text-2xl font-bold'>UseState Hook</h1>
+                <h1 className='mb-4 text-2xl font-semibold'>Count: {count}</h1>
 
-                <div className='flex items-center justify-center space-x-4 mb-6'>
-                    <button className='bg-green-500 border rounded-md p-1 px-4' onClick={handleIncrement}>Increment</button>
-                    <button className='bg-red-500 border rounded-md p-1 px-4' onClick={handleDecrement}>Decrement</button>
+                <div className='flex items-center justify-center mb-6 space-x-4'>
+                    <button className='p-1 px-4 bg-green-500 border rounded-md' onClick={handleIncrement}>Increment</button>
+                    <button className='p-1 px-4 bg-red-500 border rounded-md' onClick={handleDecrement}>Decrement</button>
                 </div>
 
                 <h2 className="text-lg">{message}</h2>
 
                 {/* Accordion for explanation */}
-                <div className="mt-4 w-full">
+                <div className="w-full mt-4">
                     <button 
-                        className="bg-blue-500 text-white rounded p-2 w-full flex items-center justify-center" 
+                        className="flex items-center justify-center w-full p-2 text-white bg-blue-500 rounded" 
                         onClick={toggleAccordion}
                     >
                         {isOpen ? 'Hide Explanation' : 'Show Explanation'}
@@ -44,35 +44,35 @@ function Usestatehook() {
 
                     <div className={`accordion-content ${isOpen ? 'open' : 'closed'}`}>
                         {isOpen && (
-                            <div className="mt-2 p-4 bg-gray-200 rounded">
-                                <h3 className="font-semibold">What is useState?</h3>
+                            <div className="p-4 mt-2 bg-gray-200 rounded">
+                                <h3 className="mt-6 font-semibold">What is useState?</h3>
                                 <p><strong>State Management:</strong> In React, state refers to a data structure that holds information about the component's current situation. When state changes, React re-renders the component to reflect those changes. useState allows you to create and manage state within functional components.</p>
                                 
-                                <h4 className="font-semibold">Key Features of useState</h4>
+                                <h4 className="mt-6 font-semibold">Key Features of useState</h4>
                                 <p><strong>Initialization:</strong> You can initialize state with a default value when you call useState. For example:</p>
 
-                                <div className="flex justify-center">
+                                <div className="flex justify-center mt-6">
                                     <img src="/images/img 1.png" alt="useState Initialization Example" className="mt-2 mb-4 rounded-md" />
                                 </div>
 
-                                <p>In this example, <code>count</code> is the state variable initialized to 0, and <code>setCount</code> is a function that you can call to update the value of count.</p>
+                                <p className='mt-6'>In this example, <code>count</code> is the state variable initialized to 0, and <code>setCount</code> is a function that you can call to update the value of count.</p>
 
-                                <p><strong>State Update:</strong> To update the state, you call the updater function (e.g., <code>setCount</code>). React will then re-render the component with the new state value.</p>
+                                <p className='mt-6'><strong>State Update:</strong> To update the state, you call the updater function (e.g., <code>setCount</code>). React will then re-render the component with the new state value.</p>
 
-                                <div className="flex justify-center">
+                                <div className="flex justify-center mt-6">
                                     <img src="/images/img 2.png" alt="useState Update Example" class="mt-2 mb-4 rounded-md" />
                                 </div>
                                 
-                                <p><strong>Preserving State Across Renders:</strong> The state created with useState persists between re-renders of the component. This means that when the component re-renders, the state value remains intact unless explicitly changed.</p>
+                                <p className='mt-6'><strong>Preserving State Across Renders:</strong> The state created with useState persists between re-renders of the component. This means that when the component re-renders, the state value remains intact unless explicitly changed.</p>
 
-                                <p><strong>Multiple State Variables:</strong> You can use useState multiple times in the same component to manage different pieces of state:</p>
+                                <p className='mt-6'><strong>Multiple State Variables:</strong> You can use useState multiple times in the same component to manage different pieces of state:</p>
 
-                                <div className="flex justify-center">
+                                <div className="flex justify-center mt-6">
                                     <img src="/images/img 3.png" alt="useState Multiple Variables Example" class="mt-2 mb-4 rounded-md" />
                                 </div>
 
-                                <h4 className="font-semibold">Example Use Cases</h4>
-                                <ul className="list-disc ml-5">
+                                <h4 className="mt-6 font-semibold">Example Use Cases</h4>
+                                <ul className="ml-5 list-disc">
                                     <li>Form Inputs: Managing the value of input fields in forms.</li>
                                     <li>Counters: Keeping track of numbers, such as increments and decrements.</li>
                                     <li>Toggle States: Managing boolean values for toggling elements (e.g., showing/hiding a modal).</li>
@@ -87,7 +87,7 @@ function Usestatehook() {
                 {/* Navigation button to UseEffectHook */}
                 <div className="mt-4">
                     <Link to="/useeffect">
-                        <button className='bg-purple-500 text-white rounded p-2'>Go to UseEffect Hook Example</button>
+                        <button className='p-2 text-white bg-gray-700 rounded'>Next UseEffect Hook</button>
                     </Link>
                 </div>
 
