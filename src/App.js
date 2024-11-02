@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Usestatehook from './hooks/Usestatehook'
+import Usestatehook from './Hooks/Usestatehook'
 
 function App() {
 
