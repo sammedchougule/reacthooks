@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="App"> 
         <Routes>
-          <Route path="/usestate"  element={<Usestatehook/>} />
+          <Route path="/"  element={<Usestatehook/>} />
           <Route path="/useeffect" element={<Useeffecthook/>} />
           <Route path="/usememo" element={<Usememohook/>} />
         </Routes>

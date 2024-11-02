@@ -76,7 +76,7 @@ function Useeffecthook() {
 
                 {/* Navigation button to UsestateHook */}
                 <div className="mt-4 space-x-4 ">
-                    <Link to="/usestate">
+                    <Link to="/">
                         <button className='p-2 text-white bg-gray-400 rounded'>Back to UseState Hook</button>
                     </Link>
 
