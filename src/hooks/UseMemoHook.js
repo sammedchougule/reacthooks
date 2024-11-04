@@ -90,7 +90,7 @@ function Usememohook() {
                         <button className='p-2 text-white bg-gray-400 rounded'>Back to UseEffect Hook</button>
                     </Link>
 
-                    <Link to="/useeffect">
+                    <Link to="/usecall">
                         <button className='p-2 text-white bg-gray-700 rounded'>Next UseCallback Hook</button>
                     </Link>
                 </div>
